@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Mantenha como row para empilhar horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço */
+    align-items: flex-start; /* Alinha os itens no topo */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    min-height: 100vh; 
+    box-sizing: border-box;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 10px; /* Ajuste a margem para dar espaço entre os itens */
+    width: calc(60% - 10px); /* Ajuste a largura para que caibam dois itens por linha */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.item img{
+    width: 30%;
+    height: 40px;
+    margin-right: 15px; /* Espaço à direita da imagem */
+}
+
+.item-text{
+    margin-top: 10px; /* Adiciona espaço acima do h5 */
+}
+
+h5 {
+    margin: 0;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+p {
+    margin: 0;
+    font-size: 1rem;
+    color: #cfcfcf;
+}
+
+span {
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+#cookies {
+    display: inline-block;
+    max-width: 100%; 
+    word-wrap: break-word; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: normal; 
+}
